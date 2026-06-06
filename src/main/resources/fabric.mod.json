@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "omnicore",
+  "version": "${version}",
+  "name": "OmniCore",
+  "description": "The All-in-One AI Agent for Minecraft 1.21.11 - Combat, Pathfinding, Automation, and more",
+  "authors": [
+    "OmniCore Team"
+  ],
+  "contact": {
+    "homepage": "https://github.com/omnicore/omnicore",
+    "sources": "https://github.com/omnicore/omnicore"
+  },
+  "license": "MIT",
+  "icon": "assets/omnicore/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.omnicore.OmniCore"
+    ]
+  },
+  "mixins": [
+    "omnicore.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
